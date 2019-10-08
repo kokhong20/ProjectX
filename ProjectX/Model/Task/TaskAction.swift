@@ -9,4 +9,5 @@
 import Foundation
 enum TaskAction: Action {
     case fetchTasks
+    case addTask(task: Task)
 }

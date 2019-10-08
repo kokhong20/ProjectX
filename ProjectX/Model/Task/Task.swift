@@ -9,13 +9,15 @@
 import Foundation
 
 struct Task: Identifiable {
-    let id: String
+    let id: String = UUID().uuidString
     let name: String
+    let quantity: Int
+    let category: String
 
     #if DEBUG
     static let sampleData = [
-        Task(id: UUID().uuidString, name: "Task A"),
-        Task(id: UUID().uuidString, name: "Task B")
+        Task(name: "Task A", quantity: 1, category: Category.milk.rawValue),
+        Task(name: "Task B", quantity: 2, category: Category.vege.rawValue)
     ]
     #endif
     

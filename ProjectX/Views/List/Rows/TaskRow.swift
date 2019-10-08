@@ -12,15 +12,26 @@ struct TaskRow: View {
     let task: Task
     
     var body: some View {
-        VStack {
-            HStack {
-
-                VStack {
-                    Text("Title")
-                    Text(task.name)
-                        .foregroundColor(.secondary)
-                        .lineLimit(0)
-                }
+        HStack(alignment: .top, spacing: 20.0) {
+            VStack(alignment: .leading) {
+                Text("Name")
+                Text(task.name)
+                    .foregroundColor(.secondary)
+                    .lineLimit(0)
+            }
+            
+            VStack(alignment: .leading) {
+                Text("Category")
+                Text(task.category)
+                    .foregroundColor(.secondary)
+                    .lineLimit(0)
+            }
+            
+            VStack(alignment: .leading) {
+                Text("Quantity")
+                Text("\(task.quantity)")
+                    .foregroundColor(.secondary)
+                    .lineLimit(0)
             }
         }
     }

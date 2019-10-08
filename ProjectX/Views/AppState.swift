@@ -30,5 +30,6 @@ let store = AppState()
 
 #if DEBUG
 let sampleStore = AppState(taskState: TaskState(tasks: Task.sampleData))
+let emptyStore = AppState(taskState: TaskState())
 #endif
 

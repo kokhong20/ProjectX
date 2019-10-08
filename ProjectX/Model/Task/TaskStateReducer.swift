@@ -13,6 +13,8 @@ struct TaskStateReducer: Reducer {
         switch action {
         case TaskAction.fetchTasks:
             state.tasks = Task.sampleData
+        case TaskAction.addTask(task: let task):
+            state.tasks.append(task)
         default:
             break
         }

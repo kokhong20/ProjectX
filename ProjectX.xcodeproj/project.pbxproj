@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1C32DB234CC4FD003E13DB /* AddTaskSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1C32DA234CC4FD003E13DB /* AddTaskSheet.swift */; };
+		1B1C32DD234CCE03003E13DB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1C32DC234CCE03003E13DB /* Category.swift */; };
 		1B777CC7234A1DDB00A9A0F6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B777CC6234A1DDB00A9A0F6 /* MainTabView.swift */; };
 		1B777CCC234A20D800A9A0F6 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B777CCB234A20D800A9A0F6 /* TaskListView.swift */; };
 		1B777CCE234A216400A9A0F6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B777CCD234A216400A9A0F6 /* AppState.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B1C32DA234CC4FD003E13DB /* AddTaskSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskSheet.swift; sourceTree = "<group>"; };
+		1B1C32DC234CCE03003E13DB /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		1B777CC6234A1DDB00A9A0F6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		1B777CCB234A20D800A9A0F6 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		1B777CCD234A216400A9A0F6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
@@ -96,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1C32D9234CC4DD003E13DB /* AddList */ = {
+			isa = PBXGroup;
+			children = (
+				1B1C32DA234CC4FD003E13DB /* AddTaskSheet.swift */,
+			);
+			path = AddList;
+			sourceTree = "<group>";
+		};
 		1B777CC2234A1D5600A9A0F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +129,7 @@
 		1B777CC8234A208F00A9A0F6 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				1B1C32D9234CC4DD003E13DB /* AddList */,
 				1B777CE1234A380700A9A0F6 /* Rows */,
 				1B777CDD234A291600A9A0F6 /* TaskState.swift */,
 				1B777CCB234A20D800A9A0F6 /* TaskListView.swift */,
@@ -140,6 +153,7 @@
 				1B777CD9234A28F600A9A0F6 /* TaskAction.swift */,
 				1B777CDB234A290F00A9A0F6 /* TaskStateReducer.swift */,
 				1B777CDF234A303A00A9A0F6 /* Task.swift */,
+				1B1C32DC234CCE03003E13DB /* Category.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -350,11 +364,13 @@
 				1BDD876E2339020800F1265A /* AppDelegate.swift in Sources */,
 				1B777CD5234A252F00A9A0F6 /* Reducer.swift in Sources */,
 				1BDD87702339020800F1265A /* SceneDelegate.swift in Sources */,
+				1B1C32DB234CC4FD003E13DB /* AddTaskSheet.swift in Sources */,
 				1B777CCE234A216400A9A0F6 /* AppState.swift in Sources */,
 				1B777CDC234A290F00A9A0F6 /* TaskStateReducer.swift in Sources */,
 				1B777CD7234A254500A9A0F6 /* State.swift in Sources */,
 				1B777CD3234A252500A9A0F6 /* Action.swift in Sources */,
 				1B777CDA234A28F600A9A0F6 /* TaskAction.swift in Sources */,
+				1B1C32DD234CCE03003E13DB /* Category.swift in Sources */,
 				1B777CE0234A303A00A9A0F6 /* Task.swift in Sources */,
 				1B777CDE234A291600A9A0F6 /* TaskState.swift in Sources */,
 				1B777CC7234A1DDB00A9A0F6 /* MainTabView.swift in Sources */,
@@ -524,6 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectX/Preview Content\"";
+				DEVELOPMENT_TEAM = Z2Q7ZE2E5A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProjectX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -543,6 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ProjectX/Preview Content\"";
+				DEVELOPMENT_TEAM = Z2Q7ZE2E5A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ProjectX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
